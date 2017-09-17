@@ -54,7 +54,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="bds-6B-olU" id="Agp-bR-r5k"/>
                         <outlet property="recordingLabel" destination="Hhh-Sz-aH8" id="5MI-hJ-igR"/>
+                        <outlet property="stopRecordingButton" destination="M02-Fi-PBV" id="zh7-BZ-N8t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
