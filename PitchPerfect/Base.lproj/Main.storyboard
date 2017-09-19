@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -79,7 +80,23 @@
                     <view key="view" contentMode="scaleToFill" id="3le-Kt-Ixb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vo7-4X-UCR">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dYg-2p-32y">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="603"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xuh-dy-kwJ" firstAttribute="top" secondItem="Vo7-4X-UCR" secondAttribute="bottom" id="24t-gc-S9D"/>
+                            <constraint firstItem="Vo7-4X-UCR" firstAttribute="top" secondItem="pNQ-09-SV9" secondAttribute="bottom" id="5nF-0T-sUQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vo7-4X-UCR" secondAttribute="trailing" id="Tx2-6k-KWv"/>
+                            <constraint firstItem="Vo7-4X-UCR" firstAttribute="leading" secondItem="3le-Kt-Ixb" secondAttribute="leadingMargin" id="hAF-hY-n0c"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jgg-HK-dTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
