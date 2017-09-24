@@ -82,55 +82,65 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vo7-4X-UCR">
-                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <rect key="frame" x="16" y="64" width="343" height="499"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dYg-2p-32y">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="201"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="166.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uR-9H-1OO" userLabel="SnailButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="201"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="166.5"/>
                                                 <state key="normal" image="Slow"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWG-NC-elc" userLabel="RabitButton">
-                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="201"/>
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="166.5"/>
                                                 <state key="normal" image="Fast"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="i2Q-Cx-ugy">
-                                        <rect key="frame" x="0.0" y="201" width="343" height="201"/>
+                                        <rect key="frame" x="0.0" y="166.5" width="343" height="166"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aa2-P9-l04" userLabel="ChipmunkButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="201"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="166"/>
                                                 <state key="normal" image="HighPitch"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MoY-Fc-fII" userLabel="DarthVaderButton">
-                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="201"/>
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="166"/>
                                                 <state key="normal" image="LowPitch"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sJh-ZQ-fTb">
-                                        <rect key="frame" x="0.0" y="402" width="343" height="201"/>
+                                        <rect key="frame" x="0.0" y="332.5" width="343" height="166.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyN-KW-b6v" userLabel="EchoButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="201"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="166.5"/>
                                                 <state key="normal" image="Echo"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUB-Rl-RoZ" userLabel="RevebButton">
-                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="201"/>
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="166.5"/>
                                                 <state key="normal" image="Reverb"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCT-vx-F3f">
+                                <rect key="frame" x="155.5" y="583" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="KtU-Kl-587"/>
+                                    <constraint firstAttribute="height" constant="64" id="fwo-eq-0Ep"/>
+                                </constraints>
+                                <state key="normal" image="Stop"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="xuh-dy-kwJ" firstAttribute="top" secondItem="Vo7-4X-UCR" secondAttribute="bottom" id="24t-gc-S9D"/>
                             <constraint firstItem="Vo7-4X-UCR" firstAttribute="top" secondItem="pNQ-09-SV9" secondAttribute="bottom" id="5nF-0T-sUQ"/>
+                            <constraint firstItem="yCT-vx-F3f" firstAttribute="top" secondItem="Vo7-4X-UCR" secondAttribute="bottom" constant="20" id="82J-fd-CUb"/>
+                            <constraint firstItem="yCT-vx-F3f" firstAttribute="centerX" secondItem="Vo7-4X-UCR" secondAttribute="centerX" id="Nhf-Cm-r3N"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Vo7-4X-UCR" secondAttribute="trailing" id="Tx2-6k-KWv"/>
+                            <constraint firstItem="xuh-dy-kwJ" firstAttribute="top" secondItem="yCT-vx-F3f" secondAttribute="bottom" constant="20" id="bSi-v7-kDh"/>
                             <constraint firstItem="Vo7-4X-UCR" firstAttribute="leading" secondItem="3le-Kt-Ixb" secondAttribute="leadingMargin" id="hAF-hY-n0c"/>
                         </constraints>
                     </view>
